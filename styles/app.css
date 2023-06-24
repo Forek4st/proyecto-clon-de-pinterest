@@ -1,0 +1,315 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.navbar-pinterest {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  align-self: center;
+  align-items: center;
+  margin-left: 1rem;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar-pinterest .pinterest-icon {
+  padding: 0px 20px;
+}
+
+.div2 button {
+  display: flex;
+  border: 10px;
+  cursor: pointer;
+  background-color: black;
+  border: 5px solid black;
+  color: white;
+  padding: 10px;
+  border-radius: 24px;
+  height: 48px;
+  min-width: 60px;
+  font-size: 18px;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.div3 {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  height: 48px;
+  gap: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 0px 20px;
+}
+
+.div4 {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  height: 48px;
+  gap: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: -10px;
+  padding: 0px 20px;
+}
+
+.div5 {
+  min-width: 72%;
+  height: 48px;
+  background: #e0e0e0;
+  display: flex;
+  border-radius: 28px;
+  padding: 0px 20px;
+}
+
+.endiconblock {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 20px;
+}
+
+nav .endiconblock button {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.barradebusqueda input {
+  background: transparent;
+  border: 0px;
+  width: 120px;
+  color: black;
+  font-family: sans-serif;
+  outline: none;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.iconodebusqueda {
+  display: flex;
+  align-self: center;
+  justify-content: start;
+  height: 20px;
+}
+
+.finder {
+  margin-left: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  align-self: center;
+  background-color: transparent;
+  border: solid 1px transparent;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 85px 60px;
+  gap: 10px;
+}
+
+.column {
+  width: 80%;
+}
+
+.card-image {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.hoverimg {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.hoverdesign {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: zoom-in;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 5px;
+}
+
+.hoverimg:hover .hoverdesign {
+  opacity: 1;
+}
+
+.profilebtn {
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  top: 30px;
+  left: 35px;
+  font-size: 20px;
+}
+
+.arrow {
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  top: 35px;
+  left: 90px;
+}
+
+.savebtn {
+  position: absolute;
+  background-color: #e60023;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  top: 20px;
+  left: 210px;
+  border-radius: 50px;
+  width: 85px;
+  height: 50px;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.iconosvg {
+  background-color: #e0e0e0;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 100%;
+  padding: 5px 5px;
+}
+
+.dotbtn {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+
+.sharebtn {
+  position: absolute;
+  bottom: 15px;
+  right: 75px;
+}
+
+/* mediaqueries */
+
+@media screen and (max-width: 1440px) {
+  /* Uso esta resolucion para el mediaquerie de 1440px por que  mi laptop tiene una definicion de pantalla de 1440px y mi pc de escritorio de 2560px */
+  body {
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .div5 {
+    min-width: 57%;
+  }
+
+  .profilebtn {
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 30px;
+    left: 20px;
+    font-size: 15px;
+  }
+
+  .arrow {
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+    width: 15px;
+    top: 35px;
+    left: 65px;
+  }
+
+  .savebtn {
+    position: absolute;
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 20px;
+    left: 125px;
+    border-radius: 50px;
+    width: 65px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .iconosvg {
+    background-color: #e0e0e0;
+    color: white;
+    cursor: pointer;
+    width: 25px;
+    border-radius: 100%;
+    padding: 5px 5px;
+  }
+
+  .dotbtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .sharebtn {
+    position: absolute;
+    bottom: 20px;
+    right: 55px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .customimg {
+    display: flex;
+    object-fit: contain;
+    max-height: 480px;
+    object-position: right;
+  }
+}
