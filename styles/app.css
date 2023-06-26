@@ -234,36 +234,35 @@ a:visited {
 /* mediaqueries */
 
 @media screen and (max-width: 420px) and (min-width: 360px) {
-  .body {
-    max-width: 100%;
-    left: 0;
-    right: 0;
-  }
   .content {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 0;
-    margin-top: 10px;
-    column-gap: 0px;
+    margin: 10px 5px;
+    
+  }
+
+  .column {
+    width: 100%;
+    display: inline-block;
+    /* justify-content: space-between; */
+   /*  align-items: space-between; */
+
   }
 
   .card-image {
-    min-height: auto;
-    object-fit: fill;
+    width: 100%;
   }
+
   .customimg {
     display: flex;
     object-fit: fill;
-    max-height: 380px;
     object-position: center;
+    max-height: 420px;
   }
 
-  .navbar-pinterest{
-visibility: hidden;
+  .navbar-pinterest {
+    visibility: hidden;
   }
   .profilebtn {
     position: absolute;
@@ -273,16 +272,16 @@ visibility: hidden;
     cursor: pointer;
     top: 30px;
     left: 20px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .arrow {
     position: absolute;
     background-color: transparent;
     cursor: pointer;
-    width: 12px;
-    top: 32px;
-    left: 55px;
+    width: 15px;
+    top: 35px;
+    left: 60px;
   }
 
   .savebtn {
@@ -291,8 +290,8 @@ visibility: hidden;
     color: #fff;
     border: none;
     cursor: pointer;
-    top: 22px;
-    left: 85px;
+    top: 25px;
+    left: 125px;
     border-radius: 50px;
     width: 60px;
     height: 30px;
@@ -302,9 +301,9 @@ visibility: hidden;
     padding-left: 7px;
     padding-right: 7px;
   }
-  }
+}
 
-  @media screen and (max-width: 2560px) and (min-width: 1080px) {
+@media screen and (max-width: 1440px) and (min-width: 1080px) {
   /* Uso esta resolucion para el mediaquerie de 1440px por que  mi laptop tiene una definicion de pantalla de 1440px y mi pc de escritorio de 2560px */
   body {
     max-width: 100%;
@@ -382,4 +381,3 @@ visibility: hidden;
     object-position: right;
   }
 }
-
