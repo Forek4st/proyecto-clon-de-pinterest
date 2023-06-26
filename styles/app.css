@@ -233,7 +233,7 @@ a:visited {
 
 /* mediaqueries */
 
-@media screen and (max-width: 420px) and (min-width: 360px) {
+@media screen and (max-width: 480px) and (min-width: 160px) {
   .content {
     max-width: 100%;
     display: grid;
