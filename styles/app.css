@@ -239,19 +239,17 @@ a:visited {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px 5px;
-    
   }
 
   .column {
     width: 100%;
     display: inline-block;
-    /* justify-content: space-between; */
-   /*  align-items: space-between; */
-
+    
   }
 
   .card-image {
     width: 100%;
+    
   }
 
   .customimg {
@@ -291,7 +289,7 @@ a:visited {
     border: none;
     cursor: pointer;
     top: 25px;
-    left: 100px;
+    left: 120px;
     border-radius: 50px;
     width: 60px;
     height: 30px;
@@ -304,7 +302,7 @@ a:visited {
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1080px) {
-  /* Uso esta resolucion para el mediaquerie de 1440px por que  mi laptop tiene una definicion de pantalla de 1440px y mi pc de escritorio de 2560px */
+  /* Uso esta resolucion para el mediaquerie de 1440px por que  mi laptop tiene una definicion de pantalla de 1440px y mi PC de escritorio de 2560px */
   body {
     max-width: 100%;
     margin-left: 1rem;
