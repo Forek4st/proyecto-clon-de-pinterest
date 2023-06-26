@@ -303,13 +303,88 @@ a:visited {
     bottom: 20px;
     right: 55px;
   }
-}
 
-@media (max-width: 1440px) {
   .customimg {
     display: flex;
     object-fit: contain;
     max-height: 480px;
     object-position: right;
   }
+
+}
+
+@media screen and (max-width: 390px) {
+
+ .body{
+  max-width: 100%;
+  left: 0;
+  right: 0;
+ }
+ .content{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;    
+  justify-items: center;
+  gap: 0;
+  margin-top: 10px;
+  column-gap: 0px;
+ }
+
+ .card-image{
+  min-height: auto;
+  object-fit: fill;
+}
+ .customimg{
+  display: flex;
+  object-fit: fill;
+  max-height: 380px;
+  object-position: center;
+}
+
+
+  }
+
+.navbar-pinterest{
+  visibility: hidden;
+}
+
+.profilebtn{
+    position: absolute;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 30px;
+    left: 15px;
+    font-size: 12px;
+  }
+
+  .arrow {
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+    width: 12px;
+    top: 32px;
+    left: 45px;
+  }
+
+
+.savebtn {
+  position: absolute;
+  background-color: #e60023;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  top: 20px;
+  left: 75px;
+  border-radius: 50px;
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
